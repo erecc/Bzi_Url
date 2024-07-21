@@ -1,10 +1,9 @@
 ## 关于
 新手小白学习PHP写的第一个小程序</br>
 使用工具：</br>
-1.百度AI PHP代码生成器</br>
-2.Notepad</br>
-
-演示站点：https://bgo.cc </br>
+        1.百度PHP代码生成器</br>
+## 演示
+示例站点：https://bgo.cc </br>
 ![Example Image](images/bz_1.png)</br>
 ![Example Image](images/bz_2.png)</br>
 
