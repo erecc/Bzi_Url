@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="bgo.css">
+    <title>短网址小程序</title>
+   <style>
+        /* 确保页脚始终在底部 */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e7e7e7;
+            padding: 8px 0;
+        }
+
+</style>
+
+
+
+    <script>
+        // 定义主域名
+        var mainDomain = 'bgo.cc'; //填写你的域名
+
+        // 获取当前域名
+        var hostname = window.location.hostname;
+
+        // 检查是否有子域名，并排除主域名
+        if (hostname !== mainDomain) {
+            // 提取子域名（前缀）
+            var subdomains = hostname.split('.');
+            var prefix = subdomains.shift(); // 移除第一个元素（通常是子域名）
+
+            // 检查是否只剩主域名部分
+            if (subdomains.join('.') === mainDomain) {
+                // 构造新的URL，将子域名作为目录名
+                var newUrl = window.location.protocol + '//' + hostname + '/' + prefix + '/';
+
+                // 重定向到新的URL
+                window.location.href = newUrl;
+            }
+        }
+    </script>
+
+
+
+
+
+</head>
+<body>
+    <form action="main.php" method="post"  class="form-signin" style="width: 100%;max-width: 330px;padding: 15px;margin: 0 auto;">
+        <label for="txt_url">自定义短别名:</label>
+        <input type="text" id="txt_url" name="txt_url" class="form-control" placeholder="仅支持数字与小写字母" maxlength="8" required>
+
+        <label for="new_url">您需要跳转的网址:</label>
+        <input type="text" id="new_url" name="new_url" class="form-control" placeholder="例如：http://example.com/" required>
+
+       <button class="btn btn-lg btn-primary btn-block mt-2" type="submit">提交</button>
+        
+    </form>
+
+
+
+
+<script>
+function popupText(event) {
+  // 阻止默认的链接行为
+  event.preventDefault();
+
+  // 弹出文本消息
+alert('所有使用跳转的违法站发现即加入黑名单并封锁来访IP，贵站如不想被跳转也可来信告知加入拒绝名单');
+
+}
+
+function mailText(event) {
+  // 阻止默认的链接行为
+  event.preventDefault();
+
+  // 弹出文本消息
+alert('Email: name@hostname.com');
+}
+</script>
+
+<div class="footer">
+<p>关于本站：本站仅提供学习交流所用，不定期清理缓存，如遇到无法访问可重新提交或联系本人锁定，请勿用于非法用途，发现立即清除！</p>
+<p>© 2024 「 <a href="https://bgo.cc/" target="_blank" rel="noopener noreferrer">B G O</a>  」All Rights Reserved</p>
+<p>
+<a href="#" onclick="mailText(event)">联系我</a>&nbsp|&nbsp
+<a href="#" onclick="popupText(event)">黑名单</a>&nbsp|&nbsp
+</p>
+
+</div>       
+
+
+
+
+</body>
+</html>
+
