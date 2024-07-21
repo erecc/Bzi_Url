@@ -4,7 +4,10 @@
 1.百度AI PHP代码生成器</br>
 2.Notepad</br>
 
-演示站点：https://bgo.cc
+演示站点：https://bgo.cc </br>
+![Example Image](images/bz_1.png)</br>
+![Example Image](images/bz_2.png)</br>
+
 ## 运行环境
 运行环境： PHP>5.3</br>
 数据库：无</br>
