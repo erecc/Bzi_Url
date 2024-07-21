@@ -118,7 +118,7 @@ file_put_contents($filePath, $fileContent);
 // 输出成功消息或进行其他操作
 echo "</br>";
 echo "您可直接访问: bgo.cc/" . htmlspecialchars($txt_url);
-echo "</br>或是直接访问：".htmlspecialchars($txt_url).".bgo.cc";
+echo "</br>或是直接访问：".htmlspecialchars($txt_url).".bgo.cc"; //如域名未使用泛解析请注释此行
 //================================= 日志记录==================================================
 
 // 获取客户端IP地址的函数
