@@ -1,5 +1,5 @@
 ## 关于
-新手小白学习PHP写的第一个小程序</br>
+学习PHP写的第一个小程序</br>
 使用工具：</br>
         1.百度PHP代码生成器</br>
 ## 演示
@@ -49,5 +49,5 @@
    
 ## Bug反馈
 如果您发现有新的Bug可以反馈给我,在blog留言或是给我发Email 🎉</br>
-  Blog: https://bzi.me</br>
- Email：ere@ere.cc</br>
+  Blog: https://www.ximi.me</br>
+ Email：admin@ximi.me</br>
