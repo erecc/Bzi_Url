@@ -3,7 +3,7 @@
 使用工具：</br>
         1.百度PHP代码生成器</br>
 ## 演示
-示例站点：https://bgo.cc </br>
+示例站点：https://1v.hk </br>
 ![Example Image](images/bz_1.png)</br>
 ![Example Image](images/bz_2.png)</br>
 
